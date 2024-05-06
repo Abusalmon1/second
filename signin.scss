@@ -1,0 +1,66 @@
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color:rgb(46, 136, 50);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+	height:10%;
+}
+
+.container h2 {
+    margin-top: 0;
+    padding: 5px;
+    background-color: rgb(57, 109, 50);
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+    width: calc(100% - 10px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container button[type="submit"] {
+    background-color: #3e8e41;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #357a38;
+}
+
+.container p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.container a {
+    color: #a9c4aa;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="email"] {
+        width: 100%;
+    }
+}

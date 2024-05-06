@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rewards Menu</title>
+<style>
+    .icon-link {
+        position: relative;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 300px; /* Adjust the width as needed */
+    }
+    .menu a {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+    }
+    .menu a:hover {
+        background-color: #f0f0f0;
+    }
+    .content {
+        margin-top: 20px;
+        max-width: 300px; /* Adjust the width as needed */
+    }
+    .content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="icon-link" id="rewardsLink">
+        <span class="icon" id="rewardsIcon">🎁</span>
+        <div class="menu" id="rewardsMenu">
+            <a href="#">Points</a>
+            <a href="#">Offers</a>
+            <a href="#">Redeem</a>
+            <a href="#">Refer a Friend</a>
+            <a href="#">Click and Earn</a>
+            <a href="#">Invite and Earn</a>
+            <a href="#">Contests</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Rewards Catalog</a>
+            <a href="#">Special Promotions</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>How to Earn Rewards</h3>
+        <p>Earn rewards points by making purchases, participating in promotions, referring friends, and engaging with our platform.</p>
+        <h3>How to Invite and Earn</h3>
+        <p>Invite your friends to join our platform using your referral link. You'll earn bonus rewards when they sign up and make their first purchase.</p>
+        <h3>Contests and Special Promotions</h3>
+        <p>Participate in contests and take advantage of special promotions to earn extra rewards and prizes.</p>
+    </div>
+
+    <script>
+        var rewardsLink = document.getElementById('rewardsLink');
+        var rewardsMenu = document.getElementById('rewardsMenu');
+
+        rewardsLink.addEventListener('click', function() {
+            rewardsMenu.style.display = rewardsMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!rewardsLink.contains(event.target)) {
+                rewardsMenu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

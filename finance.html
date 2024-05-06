@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance Menu</title>
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start; /* Align items at the start of the cross axis */
+    }
+    .icon-link {
+        position: relative;
+        margin-right: 20px; /* Add spacing between the menu and content */
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 300px; /* Adjust the width as needed */
+    }
+    .menu a {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+    }
+    .menu a:hover {
+        background-color: #f0f0f0;
+    }
+    .content {
+        max-width: 600px; /* Adjust the width as needed */
+    }
+    .content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-link" id="financeLink">
+            <span class="icon" id="financeIcon">💰</span>
+            <div class="menu" id="financeMenu">
+                <a href="#">Budgeting Tools</a>
+                <a href="#">Expense Tracking</a>
+                <a href="#">Investment Options</a>
+                <a href="#">Financial Planning</a>
+                <a href="#">Savings Calculator</a>
+                <a href="#">Loan Calculators</a>
+                <a href="#">Retirement Planning</a>
+                <a href="#">Tax Resources</a>
+                <a href="#">Credit Score Monitoring</a>
+                <a href="#">Financial Education</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Financial Management Tools</h3>
+            <p>Explore a variety of tools to help you manage your finances effectively:</p>
+            <ul>
+                <li>Budgeting Tools: Track your income and expenses to create a budget plan.</li>
+                <li>Expense Tracking: Monitor your spending habits and identify areas for improvement.</li>
+                <li>Investment Options: Discover investment opportunities to grow your wealth.</li>
+                <li>Financial Planning: Plan for your future financial goals and milestones.</li>
+                <li>Savings Calculator: Calculate how much you need to save to reach your savings goals.</li>
+                <li>Loan Calculators: Estimate loan payments and interest rates for various types of loans.</li>
+                <li>Retirement Planning: Prepare for retirement with retirement savings strategies and calculators.</li>
+                <li>Tax Resources: Access tax guides and resources to help you file your taxes accurately.</li>
+                <li>Credit Score Monitoring: Keep track of your credit score and understand factors affecting it.</li>
+                <li>Financial Education: Learn about personal finance topics and improve your financial literacy.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var financeLink = document.getElementById('financeLink');
+        var financeMenu = document.getElementById('financeMenu');
+
+        financeLink.addEventListener('click', function() {
+            financeMenu.style.display = financeMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+       
+        document.addEventListener('click', function(event) {
+            if (!financeLink.contains(event.target)) {
+                financeMenu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

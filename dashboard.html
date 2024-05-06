@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>🔔Bank</title>
+	<link rel="stylesheet" href="dashboard.css">
+	<script src="https://kit.fontawesome.com/e6c17ec117.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<div class="header">
+        <div class="user-info">
+			<a href="user.html">
+				<img src="9187604.png" alt="User Icon" width="30" height="30">
+			</a>
+            <span id="username">Hi, Abdul Salam</span>
+        </div>
+		<div class="icons">
+			<div class="icon-link" id="phoneLink">
+				<span class="icon" id="phoneIcon">🎧</span>
+				<div class="dropdown-menu" id="dropdownMenu">
+					<a href="#">Home</a>
+					<a href="data.html">Data</a>
+					<a href="airtime.html">Airtime</a>
+					<a href="index.html">Logout</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a href="#" id="scanLink" class="icon-link">
+				  <span class="icon" id="scanIcon">📷</span>
+				</a>
+				<div class="dropdown-content">
+				  <p>Welcome! Are you here to scan?</p>
+				</div>
+			  </div>
+			<a href="notification.html" id="notificationLink" class="icon-link"><span class="icon" id="notificationIcon">🔔</span></a>
+
+		</div>
+		
+    </div>
+
+    <div class="info-container">
+        <div class="info-content">
+            <div>
+                <h3>Available Balance</h3>
+                <p><i class="fa-regular fa-eye-slash"></i>#51,000</p>
+            </div>
+        </div>
+        <div class="info-content">
+            <div>
+               <a href="transaction.html"><h3>Transaction History<i class="fa fa-angle-down" aria-hidden="true"></i></h3></a> 
+                <p>No transactions yet.</p>
+                <button>+ Add Money</button>
+            </div>
+        </div>
+    </div>
+    <div class="icon-links">
+        <a href="addmoney.html" class="icon-link"><i class="fas fa-wallet"></i> Ease Wallet</a>
+        <a href="tobank.html" class="icon-link"><i class="fas fa-university"></i> Bank</a>
+        <a href="#" class="icon-link"><i class="fas fa-money-bill-wave"></i> Withdraw</a>
+    </div>
+    <div class="additional-icons">
+        <a href="airtime.html" class="icon-link"><i class="fas fa-mobile-alt"></i> Airtime</a>
+        <a href="data.html" class="icon-link"><i class="fas fa-wifi"></i> Data</a>
+        <a href="#" class="icon-link"><i class="fas fa-coins"></i> Betting</a>
+        <a href="#" class="icon-link"><i class="fas fa-tv"></i> TV</a>
+    </div>
+    <div class="additional-icons">
+        <a href="#" class="icon-link"><i class="fas fa-piggy-bank"></i> oWealth</a>
+        <a href="#" class="icon-link"><i class="fas fa-hand-holding-usd"></i> Loan</a>
+        <a href="#" class="icon-link"><i class="fas fa-child"></i> Play4Child</a>
+        <a href="#" class="icon-link"><i class="fas fa-ellipsis-h"></i> More</a>
+    </div>
+	<div class="bordered-container">
+		<div class="flex-container">
+		  <div class="update-info">
+			<h1>special-bonus</h1>
+			<h1>Update Account Info</h1>
+			<h6>Update your info to get #200-100 airtime voucher</h6>
+			<a href="#" class="link-button">+100</a>
+		  </div>
+		  <div class="calculator">
+			<div class="time">
+			  <div id="timeDisplay"></div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+<div class="marquee">
+    <p>
+        <span class="color1">Reliable</span>
+        <span class="color2">banking</span>
+        <span class="color3">provide</span>
+        <span class="color4">diverse</span>
+        <span class="color5">financial</span>
+        <span class="color6">services</span>
+        <span class="color7">with</span>
+        <span class="color8">the</span>
+        <span class="color9">user</span>
+        <span class="color10">friendly</span>
+        <span class="color11">online</span>
+        <span class="color12">banking</span>
+        <span class="color13">offer</span>
+        <span class="color14">competitive</span>
+        <span class="color15">rates</span>
+        <span class="color16">personalized </span>
+        <span class="color17">custom support.</span>
+    </p>
+</div>
+    <div class="footer">
+        <a href="https://www.facebook.com/Abu salmon"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/+2348027628453"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/abusalmonsaheed"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="bottom-navigation">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="reward.html"><i class="fas fa-gift"></i> Rewards</a>
+        <a href="finance.html"><i class="fas fa-chart-line"></i> Finance</a>
+        <a href="cards.html"><i class="fas fa-credit-card"></i> Cards</a>
+        <a href="setting.html"><i class="fas fa-user"></i> Me</a>
+    </div>
+	<div class="button-container">
+		<button class="button session-expired-button">Session Expired</button>
+		<button class="button logout-button">Logout</button>
+		<button class="button upgrade-button">Upgrade Account</button> <!-- Add this line -->
+	</div>
+	<div class="bye">
+		<h6>bye</h6>
+	</div>
+	 
+	  
+    <script>
+		var phoneLink = document.getElementById('phoneLink');
+        var dropdownMenu = document.getElementById('dropdownMenu');
+
+    
+        phoneLink.addEventListener('mouseenter', function() {
+            dropdownMenu.style.display = 'block';
+        });
+
+        phoneLink.addEventListener('mouseleave', function() {
+            dropdownMenu.style.display = 'none';
+        });
+        dropdownMenu.addEventListener('mouseleave', function() {
+            dropdownMenu.style.display = 'none';
+        });
+		
+		function appendToScreen(value) {
+          document.getElementById('screen').value += value;
+        }
+        function updateTime() {
+        var currentTime = new Date().toLocaleTimeString(); // Corrected typo
+        document.getElementById('timeDisplay').textContent = currentTime; // Update time display
+    }
+
+    setInterval(updateTime, 1000);
+        function calculate() {
+          var result = eval(document.getElementById('screen').value);
+          document.getElementById('screen').value = result;
+        }
+        function clearDisplay(){
+            display.value="";
+        }
+    </script>
+</body>
+</html>

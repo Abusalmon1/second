@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visual and Physical Cards</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .card {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+    }
+    .card img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .card-details {
+        padding: 20px;
+    }
+    .card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Visual Card -->
+        <div class="card">
+            <img src="visual.webp" alt="Visual Card">
+            <div class="card-details">
+                <h2>Visual Card</h2>
+                <p>This is a representation of your virtual card. It can be used for online purchases and transactions.</p>
+            </div>
+        </div>
+        
+        <!-- Physical Card -->
+        <div class="card">
+            <img src="carrrrrr.jpeg" alt="Physical Card">
+            <div class="card-details">
+                <h2>Physical Card</h2>
+                <p>This is a representation of your physical card. It can be used for in-store purchases and ATM withdrawals.</p>
+                <p>Card Number: 1234 5678 9012 3456</p>
+                <p>Expiration Date: 12/24</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

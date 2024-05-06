@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction History</title>
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start; /* Align items at the start of the cross axis */
+    }
+    .icon-link {
+        position: relative;
+        margin-right: 20px; /* Add spacing between the menu and content */
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 300px; /* Adjust the width as needed */
+    }
+    .menu a {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+    }
+    .menu a:hover {
+        background-color: #f0f0f0;
+    }
+    .content {
+        max-width: 600px; /* Adjust the width as needed */
+    }
+    .content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-link" id="historyLink">
+            <span class="icon" id="historyIcon">📜</span>
+            <div class="menu" id="historyMenu">
+                <a href="#">View All Transactions</a>
+                <a href="#">Filter by Date</a>
+                <a href="#">Filter by Amount</a>
+                <a href="#">Filter by Type</a>
+                <a href="#">Export Transactions</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Transaction History</h3>
+            <p>View your recent transactions and filter them based on date, amount, or type:</p>
+            <ul>
+                <li>View All Transactions: See a list of all your past transactions.</li>
+                <li>Filter by Date: Filter transactions based on a specific date range.</li>
+                <li>Filter by Amount: Filter transactions based on the transaction amount.</li>
+                <li>Filter by Type: Filter transactions based on transaction types (e.g., deposits, withdrawals).</li>
+                <li>Export Transactions: Export your transaction history for record-keeping purposes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var historyLink = document.getElementById('historyLink');
+        var historyMenu = document.getElementById('historyMenu');
+
+        historyLink.addEventListener('click', function() {
+            historyMenu.style.display = historyMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close the menu if the user clicks outside of it
+        document.addEventListener('click', function(event) {
+            if (!historyLink.contains(event.target)) {
+                historyMenu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
