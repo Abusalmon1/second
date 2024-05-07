@@ -76,11 +76,11 @@
             alert('Purchase airtime for ' + telecomProvider);
         });
         function detectTelecomProvider(phoneNumber) {
-            if (phoneNumber.length === 11 && phoneNumber.startsWith('080')) {
+            if (phoneNumber.length === 11 && phoneNumber.startsWith('081')) {
                 return 'MTN';
             } else if (phoneNumber.length === 11 && phoneNumber.startsWith('090')) {
                 return 'Airtel';
-            } else if (phoneNumber.length === 11 && phoneNumber.startsWith('081')) {
+            } else if (phoneNumber.length === 11 && phoneNumber.startsWith('080')) {
                 return 'Glo';
             } else if (phoneNumber.length === 11 && phoneNumber.startsWith('070')) {
                 return '9mobile';

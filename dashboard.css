@@ -411,13 +411,10 @@ button {
 
 .upgrade-button {
   background-color: #007bff;
-  /* Blue background for upgrade button */
   color: #fff;
-  /* White text color */
 }
 
 .upgrade-button:hover {
   background-color: #0056b3;
-  /* Darker blue on hover */
 }
 /*# sourceMappingURL=dashboard.css.map */

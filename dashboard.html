@@ -56,8 +56,8 @@
         </div>
     </div>
     <div class="icon-links">
-        <a href="addmoney.html" class="icon-link"><i class="fas fa-wallet"></i> Ease Wallet</a>
-        <a href="tobank.html" class="icon-link"><i class="fas fa-university"></i> Bank</a>
+        <a href="addmoney.html" class="icon-link"><i class="fas fa-wallet"></i>To Wallet</a>
+        <a href="tobank.html" class="icon-link"><i class="fas fa-university"></i>To Bank</a>
         <a href="#" class="icon-link"><i class="fas fa-money-bill-wave"></i> Withdraw</a>
     </div>
     <div class="additional-icons">
@@ -123,9 +123,9 @@
         <a href="setting.html"><i class="fas fa-user"></i> Me</a>
     </div>
 	<div class="button-container">
-		<button class="button session-expired-button">Session Expired</button>
-		<button class="button logout-button">Logout</button>
-		<button class="button upgrade-button">Upgrade Account</button> <!-- Add this line -->
+		<a href="index.html"><button class="button session-expired-button">Session Expired</button></a>
+		<a href="index.html"><button class="button logout-button">Logout</button></a>
+		<a href="tier.html"><button class="button upgrade-button">Upgrade Account</button></a>
 	</div>
 	<div class="bye">
 		<h6>bye</h6>
@@ -152,8 +152,8 @@
           document.getElementById('screen').value += value;
         }
         function updateTime() {
-        var currentTime = new Date().toLocaleTimeString(); // Corrected typo
-        document.getElementById('timeDisplay').textContent = currentTime; // Update time display
+        var currentTime = new Date().toLocaleTimeString(); 
+        document.getElementById('timeDisplay').textContent = currentTime; 
     }
 
     setInterval(updateTime, 1000);
